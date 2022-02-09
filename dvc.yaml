@@ -1,8 +1,8 @@
 stages:
-  prepare:
-    cmd: python src/prepare.py data/data.xml
+  test:
+    cmd: python src/prepare.py data/data_copy2.xml
     deps:
-    - data/data.xml
+    - data/data_copy2.xml
     - src/prepare.py
     outs:
     - data/prepared

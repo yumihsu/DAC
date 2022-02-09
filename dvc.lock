@@ -1,16 +1,16 @@
 schema: '2.0'
 stages:
-  prepare:
-    cmd: python src/prepare.py data/data.xml
+  test:
+    cmd: python src/prepare.py data/data_copy2.xml
     deps:
-    - path: data/data.xml
-      md5: a304afb96060aad90176268345e10355
-      size: 37891850
+    - path: data/data_copy2.xml
+      md5: 2c0b76636089e6d4752c3deeb9f2dfc9
+      size: 37891845
     - path: src/prepare.py
       md5: 51549a1c87b182ebdd785704f56ffaf1
       size: 1581
     outs:
     - path: data/prepared
-      md5: 20b786b6e6f80e2b3fcf17827ad18597.dir
-      size: 23886319
+      md5: 50ec711c3c87e83c395be6d84f8b69ae.dir
+      size: 23886314
       nfiles: 2
